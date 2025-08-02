@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💰 BudgeIt - small steps, big savings.
 
-## Getting Started
+A transparent and goal-oriented **savings tracking application** built for individuals and groups using a shared piggy bank. This app solves the problem of tracking individual contributions in a collective savings container — ensuring full transparency, accountability, and motivation among users.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### ✅ Individual & Group Savings Tracking
+- Monitor how much each user contributes in a shared piggy bank.
+- Separate balance tracking for **personal savings** and **group savings**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 📅 Time-Stamped Entries
+- Every deposit is recorded with the **exact date and time**.
+- View historical deposit logs for transparency and recordkeeping.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🎯 Goal Setting
+- Set weekly, monthly, and yearly savings goals.
+- Visual goal progress bars and reminders help users stay on track.
 
-## Learn More
+### 👥 Group Collaboration
+- Users can **create savings groups** and invite others.
+- Every deposit to a group requires **proof (image/video)** and **approval and confirmation by the group admin** before being added to the shared total.
 
-To learn more about Next.js, take a look at the following resources:
+### 🔔 Notifications & Approvals
+- Deposit requests trigger **notifications** to all group members.
+- A deposit is only finalized after **unanimous approval**, promoting fairness and honesty.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📊 Visual Reports
+- Interactive **charts** and **graphs** to visualize savings performance over time.
+- Daily deposit streaks displayed on a **calendar with checkboxes**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🔐 Authentication
+- Secure user authentication via **NextAuth** with support for multiple providers.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧠 Problem This Solves
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+In traditional shared piggy banks (physical ones), users cannot:
+- Identify who deposited how much,
+- Track the timeline of deposits,
+- Ensure fair contribution or transparency.
+
+This app introduces **digital tracking, media verification, and collaborative features** to solve this problem while enhancing trust and transparency in shared savings.
+
+---
+
+## 📱 Tech Stack
+
+- **Frontend**: Next.js / React
+- **Authentication**: NextAuth.js
+- **Database**: PostgreSQL/Supabase (via Prisma or Neon)
+- **Media Handling**: Uploads for images/videos
+- **Charts & UI**: Recharts / Tailwind CSS
+
+---
+
+## 📝 Future Enhancements
+
+- In-app messaging or comment system under each group deposit.
+- Automatic reminders for daily or weekly contributions.
+- Leaderboard-style motivation system.
+- Integration with mobile notifications (via Firebase or Push APIs).
+
+---
+
+## 👥 Ideal Use Cases
+
+- Shared piggy bank between family members or cousins.
+- Small group savings clubs.
+- Partner or couple saving for a goal (vacation, gift, emergency fund).
+- Transparent fundraising within a friend circle.
+
+---
+
+## 🧑‍💻 Project Status
+
+This app is currently in development. Initial features have been scoped and a working prototype is being built. Feedback and contributions are welcome.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
