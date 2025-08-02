@@ -1,6 +1,19 @@
-import { rubik } from "@/lib/fonts";
+import { 
+   ArrowRight, 
+   Target, 
+   Users, 
+   TrendingUp, 
+   PiggyBank, 
+   CheckCircle, 
+   Star, 
+   Play, 
+   Menu, 
+   X 
+} from 'lucide-react';
+import { features, testimonials } from "@/constants/landing";
+import Navigation from "@/components/landing/Navigation";
 
-export default function Home() {
+export default function LandingPage() {
    return (
       <div className="min-h-screen w-full bg-[#fefcff] relative">
          <div
@@ -13,14 +26,7 @@ export default function Home() {
             }}
          />
 
-         <section className={`${rubik.className} h-screen w-full flex flex-col items-center justify-center relative z-10`}>
-            <h1 className="text-4xl font-bold text-text-primary mb-4">
-               BudgeIt
-            </h1>
-            <p className="text-lg text-text-secondary">
-               Small Steps, Big Savings
-            </p>
-         </section>
+         <Navigation />
       </div>
    );
 }
