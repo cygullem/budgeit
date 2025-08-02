@@ -1,17 +1,5 @@
-import { 
-   ArrowRight, 
-   Target, 
-   Users, 
-   TrendingUp, 
-   PiggyBank, 
-   CheckCircle, 
-   Star, 
-   Play, 
-   Menu, 
-   X 
-} from 'lucide-react';
-import { features, testimonials } from "@/constants/landing";
 import Navigation from "@/components/landing/Navigation";
+import Hero from "@/components/landing/Hero"
 
 export default function LandingPage() {
    return (
@@ -26,7 +14,10 @@ export default function LandingPage() {
             }}
          />
 
-         <Navigation />
+         <div className="relative bg-white/10 backdrop-blur-2xl z-10">
+            <Navigation />
+            <Hero />
+         </div>
       </div>
    );
 }
