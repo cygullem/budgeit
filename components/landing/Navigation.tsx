@@ -30,15 +30,15 @@ export default function Navigation() {
 
                <div className="hidden md:flex items-center space-x-8">
                   <a href="#features"
-                     className="text-md text-gray-900 hover:text-purple-700 transition-colors">
+                     className="text-md text-purple-700 hover:text-purple-500 transition-colors">
                      Features
                   </a>
                   <a href="#how-it-works"
-                     className="text-md text-gray-900 hover:text-purple-700 transition-colors">
+                     className="text-md text-purple-700 hover:text-purple-500 transition-colors">
                      How it Works
                   </a>
                   <a href="#testimonials"
-                     className="text-md text-gray-900 hover:text-purple-700 transition-colors">
+                     className="text-md text-purple-700 hover:text-purple-500 transition-colors">
                      Reviews
                   </a>
                </div>
