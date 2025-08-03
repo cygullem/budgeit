@@ -132,7 +132,7 @@ export default function Hero() {
 
                <div
                   data-entrance
-                  className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+                  className="flex flex-col sm:flex-row gap-5 justify-center items-center"
                >
                   <button
                      data-pulse
