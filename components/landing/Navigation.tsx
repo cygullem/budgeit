@@ -15,7 +15,7 @@ export default function Navigation() {
    }, []);
 
    return (
-      <nav className={`${rubik.className} fixed top-0 w-full z-50 transition-all duration-300 ${scrollY > 50 ? 'bg-white/95 backdrop-blur-md border-b border-purple-200 shadow-lg' : 'bg-transparent'
+      <nav className={`${rubik.className} w-full transition-all duration-300 ${scrollY > 50 ? 'bg-white/10 backdrop-blur-sm border-b border-gray-200' : 'bg-transparent'
          }`}>
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center py-4">
@@ -23,20 +23,22 @@ export default function Navigation() {
                   <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
                      <PiggyBank className="w-5 h-5 text-white" />
                   </div>
-                  <a href="/" className="text-2xl font-bold text-gray-900">BudgeIt</a>
+                  <a href="/" className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+                     BudgeIt
+                  </a>
                </div>
 
                <div className="hidden md:flex items-center space-x-8">
                   <a href="#features"
-                     className="text-md text-gray-900 hover:text-purple-700 transition-colors">
+                     className="text-md text-purple-700 hover:text-purple-500 transition-colors">
                      Features
                   </a>
                   <a href="#how-it-works"
-                     className="text-md text-gray-900 hover:text-purple-700 transition-colors">
+                     className="text-md text-purple-700 hover:text-purple-500 transition-colors">
                      How it Works
                   </a>
                   <a href="#testimonials"
-                     className="text-md text-gray-900 hover:text-purple-700 transition-colors">
+                     className="text-md text-purple-700 hover:text-purple-500 transition-colors">
                      Reviews
                   </a>
                </div>
