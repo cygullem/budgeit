@@ -23,8 +23,8 @@ export default function LandingPage() {
 
          <div className="relative z-10 min-h-screen">
             <div className="bg-white/10 backdrop-blur-2xl">
-               <div className="sticky top-0 z-50">
-                  <Navigation />
+               <div className="fixed top-0 z-50 w-full">
+                  <Navigation /> 
                </div>
                <main>
                   <Hero />
