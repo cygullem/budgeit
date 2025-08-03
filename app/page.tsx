@@ -1,5 +1,8 @@
-import Navigation from "@/components/landing/Navigation";
-import Hero from "@/components/landing/Hero"
+import {
+   Navigation,
+   Hero,
+   Features
+} from "@/components/landing";
 
 export default function LandingPage() {
    return (
@@ -17,6 +20,7 @@ export default function LandingPage() {
          <div className="relative bg-white/10 backdrop-blur-2xl z-10">
             <Navigation />
             <Hero />
+            <Features />
          </div>
       </div>
    );
