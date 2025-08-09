@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Rubik } from "next/font/google";
+import { Geist, Geist_Mono, Rubik, Inter } from "next/font/google";
 
 export const geistSans = Geist({
    variable: "--font-geist-sans",
@@ -14,4 +14,10 @@ export const rubik = Rubik({
    variable: "--font-rubik",
    subsets: ["latin"],
    weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
+
+export const inter = Inter({
+   variable: "--font-inter",
+   subsets: ["latin"],
+   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
