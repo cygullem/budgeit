@@ -2,7 +2,8 @@ import {
    Navigation,
    Hero,
    Features,
-   HotItWorks
+   CTA,
+   Footer
 } from "@/components/landing";
 
 export default function LandingPage() {
@@ -30,7 +31,8 @@ export default function LandingPage() {
                <main>
                   <Hero />
                   <Features />
-                  <HotItWorks />
+                  <CTA />
+                  <Footer />
                </main>
             </div>
          </div>
