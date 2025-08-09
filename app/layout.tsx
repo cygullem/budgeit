@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { rubik } from "@/lib/fonts";
+import { ReactLenis } from "@/lib/lenis";
 
 export const metadata: Metadata = {
   title: "BudgeIt",
@@ -17,7 +18,9 @@ export default function RootLayout({
       <body
         className={`${rubik.variable} antialiased`}
       >
-        {children}
+        <ReactLenis root>
+          {children}
+        </ReactLenis>
       </body>
     </html>
   );
