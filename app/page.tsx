@@ -1,7 +1,8 @@
 import {
    Navigation,
    Hero,
-   Features
+   Features,
+   HotItWorks
 } from "@/components/landing";
 
 export default function LandingPage() {
@@ -21,14 +22,15 @@ export default function LandingPage() {
             }}
          />
 
-         <div className="relative z-10 min-h-screen">
+         <div className="relative z-10">
             <div className="bg-white/10 backdrop-blur-2xl">
                <div className="fixed top-0 z-50 w-full">
-                  <Navigation /> 
+                  <Navigation />
                </div>
                <main>
                   <Hero />
                   <Features />
+                  <HotItWorks />
                </main>
             </div>
          </div>
