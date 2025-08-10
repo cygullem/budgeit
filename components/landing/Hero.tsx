@@ -124,7 +124,7 @@ export default function Hero() {
 
                <p
                   data-entrance
-                  className="text-xl text-black mb-10 max-w-3xl mx-auto leading-relaxed"
+                  className="text-xl text-purple-900 mb-10 max-w-3xl mx-auto leading-relaxed"
                >
                   Transform your savings journey with BudgeIt. Set personal goals, join group challenges,
                   and track your progress with friends and family. Make saving money fun and social.
