@@ -1,11 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { PiggyBank, Menu, X } from "lucide-react";
-import { rubik } from "@/lib/fonts";
 
 export default function Navigation() {
-   const [isMenuOpen, setIsMenuOpen] = useState(false);
+   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+   const mobileMenuRef = useRef<HTMLDivElement>(null);
+   const menuItemsRef = useRef<HTMLDivElement>(null);
+   const [isActive, setIsActive] = useState('');
    const [scrollY, setScrollY] = useState(0);
 
    useEffect(() => {
@@ -13,6 +15,10 @@ export default function Navigation() {
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
    }, []);
+
+   const toggleMobileMenu = () => {
+      setMobileMenuOpen(!isMobileMenuOpen);
+   }
 
    return (
       <nav className={`w-full transition-all duration-300 border-b border-pink-500/5 ${scrollY > 50 ? 'bg-white/10 backdrop-blur-md' : 'bg-transparent'}`}>
@@ -29,11 +35,13 @@ export default function Navigation() {
 
                <div className="hidden md:flex items-center space-x-8">
                   <a href="#features"
-                     className="text-md text-purple-700 hover:text-purple-500 transition-colors">
+                     onClick={() => setIsActive('features')}
+                     className={`text-md hover:text-purple-500 transition-colors ${isActive === 'features' ? 'text-purple-500' : 'text-purple-900'}`}>
                      Features
                   </a>
                   <a href="#cta"
-                     className="text-md text-purple-700 hover:text-purple-500 transition-colors">
+                     onClick={() => setIsActive('pricing')}
+                     className={`text-md hover:text-purple-500 transition-colors ${isActive === 'pricing' ? 'text-purple-500' : 'text-purple-900'}`}>
                      Pricing
                   </a>
                </div>
@@ -46,14 +54,14 @@ export default function Navigation() {
                {/* Hamburger menu */}
                <button
                   className="md:hidden text-gray-900"
-                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  onClick={toggleMobileMenu}
                >
-                  {isMenuOpen ? <X /> : <Menu />}
+                  {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                </button>
             </div>
          </div>
 
-         {isMenuOpen && (
+         {isMobileMenuOpen && (
             <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-purple-200 shadow-lg">
                <div className="px-4 py-4 space-y-4">
                   <a href="#features" className="block text-gray-600 hover:text-purple-700">Features</a>
