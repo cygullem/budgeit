@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { inter } from "@/lib/fonts";
+import { rubik } from "@/lib/fonts";
 import { ReactLenis } from "@/lib/lenis";
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased`}
+        className={`${rubik.variable} antialiased`}
       >
         <ReactLenis root>
           {children}
