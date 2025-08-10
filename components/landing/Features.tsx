@@ -34,7 +34,7 @@ export default function Features() {
                </div>
 
                <h2
-                  className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-700 to-purple-500 bg-clip-text text-transparent"
+                  className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-900 to-purple-600 bg-clip-text text-transparent"
                   data-entrance
                >
                   Three ways to save
@@ -58,7 +58,7 @@ export default function Features() {
                      style={{ animationDelay: `${index * 0.2}s` }}
                   >
                      {/* Card */}
-                     <div className="relative bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 lg:p-10 hover:bg-gradient-to-br hover:from-white/15 hover:via-white/10 hover:to-white/15 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 shadow-2xl hover:shadow-purple-500/25">
+                     <div className="relative bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 lg:p-10 hover:bg-gradient-to-br hover:from-white/15 hover:via-white/10 hover:to-white/15 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 shadow-2xl shadow-blue-500/25 hover:shadow-purple-500/10">
 
                         <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" data-shimmer />
 
