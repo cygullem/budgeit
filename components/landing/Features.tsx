@@ -41,7 +41,7 @@ export default function Features() {
                </h2>
 
                <p
-                  className="text-xl md:text-2lg text-purple-900/70 max-w-3xl mx-auto leading-0.5"
+                  className="text-xl md:text-2lg text-purple-900/70 max-w-3xl mx-auto leading-relaxed"
                   data-entrance
                >
                   Whether you prefer saving alone or with others, BudgetIt adopts your style
