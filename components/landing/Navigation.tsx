@@ -47,26 +47,31 @@ export default function Navigation() {
                </div>
 
                <button
-                  className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all transform hover:scale-105 active:scale-95 cursor-pointer">
+                  className="hidden md:block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all transform hover:scale-105 active:scale-95 cursor-pointer">
                   Sign Up
                </button>
 
                {/* Hamburger menu */}
-               <button
-                  className="md:hidden text-gray-900"
-                  onClick={toggleMobileMenu}
-               >
-                  {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-               </button>
+               <div className="md:hidden">
+                  <button
+                     className="md:hidden text-gray-900"
+                     onClick={toggleMobileMenu}
+                  >
+                     {isMobileMenuOpen ? <X className="w-6 h-6 text-purple-900" /> : <Menu className="w-6 h-6 text-purple-900" />}
+                  </button>
+               </div>
             </div>
          </div>
 
          {isMobileMenuOpen && (
-            <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-purple-200 shadow-lg">
-               <div className="px-4 py-4 space-y-4">
-                  <a href="#features" className="block text-gray-600 hover:text-purple-700">Features</a>
-                  <a href="#how-it-works" className="block text-gray-600 hover:text-purple-700">How it Works</a>
-                  <a href="#testimonials" className="block text-gray-600 hover:text-purple-700">Reviews</a>
+            <div className="md:hidden bg-white/10 backdrop-blur-md border-t border-purple-200 shadow-lg">
+               <div className="px-4 py-4 flex flex-col items-center justify-center space-y-4">
+                  <a href="#features" className="block text-purple-900 hover:text-purple-700">
+                     Features
+                  </a>
+                  <a href="#cta" className="block text-purple-900 hover:text-purple-700">
+                     Pricing
+                  </a>
                   <button className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-lg">
                      Sign Up
                   </button>
