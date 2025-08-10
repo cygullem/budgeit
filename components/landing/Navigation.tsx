@@ -33,13 +33,9 @@ export default function Navigation() {
                      className="text-md text-purple-700 hover:text-purple-500 transition-colors">
                      Features
                   </a>
-                  <a href="#how-it-works"
+                  <a href="#cta"
                      className="text-md text-purple-700 hover:text-purple-500 transition-colors">
-                     How it Works
-                  </a>
-                  <a href="#testimonials"
-                     className="text-md text-purple-700 hover:text-purple-500 transition-colors">
-                     Reviews
+                     Pricing
                   </a>
                </div>
 
