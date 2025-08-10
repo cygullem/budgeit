@@ -2,7 +2,7 @@ import { PiggyBank, Heart, ExternalLink } from "lucide-react";
 
 export default function Footer() {
    const currentYear = new Date().getFullYear();
-   
+
    return (
       <footer className="relative border-t border-purple-200/5 bg-gradient-to-r from-white/5 via-purple-50/5 to-pink-50/10 backdrop-blur-sm py-6 px-4 sm:px-6 lg:px-8 overflow-hidden">
          {/* Background decorative elements */}
@@ -28,11 +28,11 @@ export default function Footer() {
 
                {/* Copyright Section */}
                <div className="flex flex-col items-end text-sm lg:text-left">
-                  <p className="text-purple-400">
+                  <p className="text-purple-900 font-medium">
                      &copy; {currentYear} BudgeIt. All rights reserved.
                   </p>
-                  <p className="text-sm text-pink-400 mt-1 flex items-center justify-center lg:justify-start">
-                     Made with <Heart className="w-4 h-4 text-pink-500 mx-1" /> for smart savers
+                  <p className="text-base text-purple-900 mt-2 flex items-center justify-center lg:justify-start font-medium">
+                     Made with <Heart className="w-4 h-4 text-pink-400 mx-1" /> for smart savers
                   </p>
                </div>
             </div>
