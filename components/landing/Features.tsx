@@ -34,14 +34,14 @@ export default function Features() {
                </div>
 
                <h2
-                  className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-900 to-purple-500 bg-clip-text text-transparent"
+                  className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-700 to-purple-500 bg-clip-text text-transparent"
                   data-entrance
                >
                   Three ways to save
                </h2>
 
                <p
-                  className="text-xl md:text-2lg text-white/70 max-w-3xl mx-auto leading-0.5"
+                  className="text-xl md:text-2lg text-purple-900/70 max-w-3xl mx-auto leading-0.5"
                   data-entrance
                >
                   Whether you prefer saving alone or with others, BudgetIt adopts your style
@@ -71,11 +71,11 @@ export default function Features() {
                            <div className="absolute -bottom-1 -left-1 w-4 h-4 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full opacity-40" data-decorative />
                         </div>
 
-                        <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 group-hover:text-white transition-colors duration-300">
+                        <h3 className="text-2xl lg:text-3xl font-bold text-purple-900 mb-4 group-hover:text-purple-800 transition-colors duration-300">
                            {feature.title}
                         </h3>
 
-                        <p className="text-white/80 leading-relaxed text-lg group-hover:text-white transition-colors duration-300">
+                        <p className="text-purple-900/70 leading-relaxed text-lg group-hover:text-purple-900 transition-colors duration-300">
                            {feature.description}
                         </p>
 
