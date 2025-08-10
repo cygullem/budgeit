@@ -24,7 +24,7 @@ export default function LandingPage() {
          />
 
          <div className="relative z-10">
-            <div className="bg-white/10 backdrop-blur-2xl">
+            <div>
                <div className="fixed top-0 z-50 w-full">
                   <Navigation />
                </div>
